@@ -1,0 +1,51 @@
+body {
+    background: #ccc;
+    margin:0;
+    padding:0;
+}
+
+.flex-container {
+    display:flex;
+    flex-direction: column;
+}
+
+.above-container {
+    background-image: linear-gradient(cyan 80%, #E7E0ED);
+    width:100%;
+    height:48vh;
+    border-bottom:5px solid #E7E0ED;
+}
+
+.bottom-container {
+    width:100%;
+    height:calc(50vh - 10vh - 10px);
+    background: #006600;
+    border-bottom:#ccc 10vh solid;
+}
+
+.trapezoid {
+    width: calc(90vw - 30vw);
+    background: url('bg_yellow_stripe.png'), url('bg_yellow_stripe.png'), url('bg_yellow_stripe.png');
+    background-color:#cccccc;
+    background-position: center bottom, center center, center top;
+    background-repeat: no-repeat;
+    background-size: 3%;
+    height:calc(50vh - 15vh);
+    transform: perspective(80px) rotateX(10deg);
+    margin: 0 auto;
+    margin-top:-47px;
+}
+#auto {
+    display:block;
+    border:2px solid #000;
+    background-color:#f00;
+    position: absolute;
+    top:20vh;
+}
+.coin {
+    display:block;
+    border:2px solid #000;
+    background-color:#fff;
+    position: absolute;
+
+}
